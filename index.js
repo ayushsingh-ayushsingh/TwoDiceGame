@@ -2,7 +2,6 @@ document.getElementById("startBtn").addEventListener("click", roll);
 
 var player1score = 0;
 var player2score = 0;
-var input = 9;
 
 function roll() {
     var num1 = Math.random() * 6 + 1;
@@ -31,10 +30,10 @@ function roll() {
     document.getElementById("score1").innerHTML = player1score;
     document.getElementById("score2").innerHTML = player2score;
 
-    if(player1score == input) {
+    if(player1score == 10) {
         alert("Player 1 is the winner!")
     }
-    else if(player1score == input) {
+    else if(player2score == 10) {
         alert("Player 2 is the winner!")
     }    
 }
