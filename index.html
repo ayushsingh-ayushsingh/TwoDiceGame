@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Dice Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-weight: 100;
+            text-align: center;
+            font-size: 72px;
+            font-family: "Playfair Display";
+        }
+        div {
+            text-align: center;
+        }
+        #dice1, #dice2 {
+            display: inline;
+            font-size: 224px;
+            padding-right: 64px;
+            padding-left: 64px;
+            margin: 2%;
+            padding-top: 0%;
+            padding-bottom: 0%;
+            background-color: rgb(151, 255, 151);
+            border-radius: 20px;
+        }
+        #winner {
+            font-size: 72px;
+        }
+        #startBtn {
+            background-color: rgb(255, 200, 200);
+            height: 48px;
+            width: 96px;
+            border-radius: 10px;
+            margin-top: 5%;
+            font-size: 18px;
+            border: solid rgb(141, 141, 141) 2px;
+            cursor: pointer;
+        }
+        #startBtn:active {
+            background-color: rgb(255, 170, 170);
+        }
+        #ctr {
+            display: inline-block;
+            background-color: rgb(151, 255, 151);
+        }
+        h2 {
+            font-family: "Playfair Display";
+            font-size: 48px;
+            font-weight: 500;
+        }
+        #score1, #score2{
+            display: inline;
+            font-size: 224px;
+            padding-right: 64px;
+            padding-left: 64px;
+            margin: 2%;
+            padding-top: 0%;
+            padding-bottom: 0%;
+            background-color: rgb(151, 255, 151);
+            border-radius: 20px;
+        }
+        #player {
+            font-size: 36px;
+            display: inline;
+            padding-right: 64px;
+            padding-left: 64px;
+            margin: 2%;
+        }
+        footer {
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Two Dice - Nine Times</h1>
+    <div>
+        <p id="dice1">6</p>
+        <p id="dice2">6</p>
+    </div>
+    <div>
+        <button id="startBtn">Roll</button>
+    </div>
+    <div>
+        <p id="winner">Result is Displayed Here</p>
+    </div>
+    <div>
+        <h2>Points Counter</h2>
+        <div>
+            <p id="player">Player 1</p>
+            <p id="player">Player 2</p>
+        </div>
+        <br>
+        <div>
+            <p id="score1">0</p>
+            <p id="score2">0</p>
+        </div>
+    </div>
+    <footer>
+        <p>Created with ❤️ by Ayush Singh</p>
+    </footer>
+    <br>
+    <script src="index.js"></script>
+</body>
+</html>
